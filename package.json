@@ -1,7 +1,7 @@
 {
   "name": "TogglePixelFitting",
   "description": "A simple plugin to change your pixel fitting preference.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engines": {
     "sketch": ">=49.0"
   },
