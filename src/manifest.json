@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Pixel fitting",
+      "identifier": "togglepixelfitting.toggleSetting",
+      "script": "./my-command.js",
+      "handler": "toggleSetting",
+      "scope": "application"
+    },
+    {
+      "identifier": "togglepixelfitting.startup",
+      "script": "./my-command.js",
+      "handlers": {
+        "actions": {
+          "Startup": "startup"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "TogglePixelFitting",
+    "isRoot": true,
+    "items": [
+      "togglepixelfitting.toggleSetting"
+    ]
+  }
+}
